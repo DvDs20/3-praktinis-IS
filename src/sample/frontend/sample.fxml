@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -9,15 +10,16 @@
    <children>
       <TextArea fx:id="firstTextArea" layoutX="100.0" layoutY="97.0" prefHeight="209.0" prefWidth="372.0" />
       <TextArea fx:id="secondTextArea" layoutX="728.0" layoutY="97.0" prefHeight="209.0" prefWidth="372.0" />
-      <Button fx:id="encryptButton" layoutX="504.0" layoutY="374.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #2680EB; -fx-background-radius: 4;" text="ENCRYPT" textFill="WHITE">
+      <Button fx:id="encryptButton" layoutX="507.0" layoutY="408.0" mnemonicParsing="false" onAction="#encryptButtonPressed" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #2680EB; -fx-background-radius: 4;" text="ENCRYPT" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="decryptButton" layoutX="504.0" layoutY="441.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #2680EB; -fx-background-radius: 4;" text="DECRYPT" textFill="WHITE">
+      <Button fx:id="decryptButton" layoutX="507.0" layoutY="472.0" mnemonicParsing="false" onAction="#decryptButtonPressed" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #2680EB; -fx-background-radius: 4;" text="DECRYPT" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Button>
+      <TextField fx:id="keyTextArea" layoutX="306.0" layoutY="340.0" prefHeight="33.0" prefWidth="589.0" promptText="Insert key here when you want to decrypt" />
    </children>
 </Pane>

@@ -5,6 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sample.backend.RSAEncryptionAndDecryption;
+
+import java.util.Base64;
 
 public class Main extends Application {
 
